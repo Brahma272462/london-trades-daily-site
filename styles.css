@@ -277,14 +277,16 @@ tbody td:not(:first-child) {
 }
 
 .price-value-line {
-  font-size: 1rem;
+  display: block;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--text);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .price-refund-line {
-  font-size: 1rem;
+  display: block;
+  font-size: 0.875rem;
   color: var(--text);
   margin-bottom: 1.25rem;
 }

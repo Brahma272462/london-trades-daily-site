@@ -34,3 +34,7 @@ Search `index.html` for `£49`. It appears in two places:
 
 1. The visible price display inside `.pricing-card`.
 2. The primary CTA button — `Subscribe — £49/month`.
+
+## How to update the pricing card supporting lines
+
+The two small lines below the price ("Around 30p per new business lead..." and "Full refund within 14 days...") are `.price-value-line` and `.price-refund-line` inside `.pricing-card` in `index.html`.
