@@ -11,7 +11,8 @@
   --muted: #555;
   --border: #ddd;
   --bg: #fff;
-  --section-gap: 3rem;
+  --bg-tint: #f5f9fa;
+  --section-gap: 3.5rem;
 }
 
 body {
@@ -19,13 +20,13 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.0625rem; /* 17px */
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 
 /* ── Header ── */
@@ -36,7 +37,7 @@ header {
 }
 
 .site-name {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -45,10 +46,10 @@ header {
 }
 
 .headline {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-weight: 700;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
   color: var(--text);
 }
 
@@ -57,7 +58,7 @@ header {
   font-weight: 600;
   color: var(--accent-dark);
   margin-bottom: 0.75rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .subheadline {
@@ -67,7 +68,7 @@ header {
 }
 
 .description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--muted);
   max-width: 680px;
 }
@@ -84,16 +85,18 @@ section:last-of-type {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text);
-  margin-bottom: 1rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /* ── Proof section ── */
 
 .proof-title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 0.75rem;
@@ -107,10 +110,10 @@ ul.feature-list {
 }
 
 ul.feature-list li {
-  padding: 0.4rem 0 0.4rem 1.5rem;
+  padding: 0.45rem 0 0.45rem 1.5rem;
   position: relative;
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 ul.feature-list li::before {
@@ -132,34 +135,40 @@ ul.feature-list li::before {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.875rem;
-  min-width: 560px;
+  font-size: 0.9375rem;
+  min-width: 480px;
 }
 
 thead {
-  background: var(--accent);
-  color: #fff;
+  background: var(--bg-tint);
+  border-bottom: 2px solid var(--accent);
 }
 
 thead th {
-  padding: 0.6rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
+  color: var(--text);
 }
 
 tbody tr:nth-child(even) {
-  background: #f5f9fa;
+  background: var(--bg-tint);
 }
 
 tbody td {
-  padding: 0.55rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
 }
 
+tbody td:first-child {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
 .table-note {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--muted);
   margin-top: 0.75rem;
   font-style: italic;
@@ -167,11 +176,18 @@ tbody td {
 
 /* ── Pricing ── */
 
+.section-pricing {
+  background: var(--bg-tint);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pricing-box {
   border: 2px solid var(--accent);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 1.75rem;
   max-width: 380px;
+  margin-bottom: 1.5rem;
 }
 
 .price {
@@ -188,7 +204,7 @@ tbody td {
 }
 
 .early-access-note {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: var(--text);
   font-weight: 500;
   margin-top: 0.5rem;
@@ -200,18 +216,16 @@ tbody td {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.75rem;
   border-radius: 4px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .btn-primary {
@@ -236,10 +250,16 @@ tbody td {
   color: #fff;
 }
 
+.cta-note {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
 /* ── FAQ ── */
 
 .faq-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .faq-item:last-child {
@@ -247,44 +267,45 @@ tbody td {
 }
 
 .faq-q {
-  font-weight: 600;
-  font-size: 0.95rem;
-  margin-bottom: 0.3rem;
-  color: var(--text);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--accent);
 }
 
 .faq-a {
-  font-size: 0.9rem;
-  color: var(--muted);
+  font-size: 1rem;
+  color: var(--text);
 }
 
 /* ── Footer ── */
 
 footer {
   padding: 2rem 0;
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   color: var(--muted);
   text-align: center;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
+  background: var(--bg-tint);
 }
 
 footer p + p {
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
 }
 
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
   .headline {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .value-prop {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .proof-title {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
 
   .pricing-box {
@@ -297,5 +318,6 @@ footer p + p {
 
   .btn {
     text-align: center;
+    width: 100%;
   }
 }
