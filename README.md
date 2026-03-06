@@ -32,5 +32,5 @@ Search `index.html` for `forms.gle` and replace the URL with the new form link. 
 
 Search `index.html` for `£49`. It appears in two places:
 
-1. Inside the `.pricing-box` — the visible price display.
-2. On the primary CTA button — `Subscribe — £49/month`.
+1. The visible price display inside `.pricing-card`.
+2. The primary CTA button — `Subscribe — £49/month`.
