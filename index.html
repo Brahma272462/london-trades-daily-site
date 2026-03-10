@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New London Trades Businesses Daily</title>
   <meta name="description" content="A daily filtered feed of newly incorporated London trade businesses, sourced directly from Companies House. Built for accountants, bookkeepers and professional service firms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,7 +26,7 @@
   <section>
     <div class="container">
       <p class="proof-title">150+ new London trade businesses every month</p>
-      <p>Our system monitors Companies House daily and identifies newly incorporated London trade businesses filtered to high-confidence London postcodes. On a typical weekday we find 10 to 15 new incorporations. You receive them the next morning, before most competitors know they exist.</p>
+      <p class="proof-body">Our system monitors Companies House daily and identifies newly incorporated London trade businesses filtered to high-confidence London postcodes. On a typical weekday we find 10 to 15 new incorporations. You receive them the next morning, before most competitors know they exist.</p>
     </div>
   </section>
 
@@ -79,7 +82,7 @@
   </section>
 
   <!-- ── Sample data ── -->
-  <section>
+  <section class="section-table">
     <div class="container">
       <h2>Real companies from a recent daily feed</h2>
       <div class="table-wrap">
@@ -135,10 +138,12 @@
       <div class="pricing-card">
         <h2>Early access pricing</h2>
         <p class="price">£49 <span class="price-period">/ month</span></p>
-        <p class="price-subtitle">Cancel anytime. No contract.</p>
-        <p class="price-value-line">Around 30p per new business lead. Win one new client and it pays for itself for years.</p>
-        <p class="price-refund-line">Full refund within 5 days if you are not satisfied. No questions asked.</p>
-        <p class="early-access-note">First 20 subscribers receive locked-in pricing at this rate.</p>
+        <div class="pricing-support">
+          <p class="billing-line">Billed monthly. Cancel anytime. No contract.</p>
+          <p>Less than £2.50 per working day. Win one new client and it pays for itself for years.</p>
+          <p class="guarantee-line">7-day money-back guarantee — no questions asked.</p>
+          <p class="locked-line">Early access pricing locked in for 12 months for the first 20 subscribers.</p>
+        </div>
         <div class="cta-group">
           <a class="btn btn-primary" href="https://londontradesdaily.lemonsqueezy.com/checkout/buy/9210b62e-c0f6-4e42-8be6-00f986289056" target="_blank">Subscribe — £49/month</a>
           <a class="btn btn-secondary" href="https://forms.gle/AXwfoAjnkyXZRsHv6">Request a free sample</a>
@@ -153,34 +158,36 @@
     <div class="container">
       <h2>Questions</h2>
 
-      <div class="faq-item">
-        <p class="faq-q">Where does the data come from?</p>
-        <p class="faq-a">Directly from Companies House, the official UK company register.</p>
-      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <p class="faq-q">Where does the data come from?</p>
+          <p class="faq-a">Directly from Companies House, the official UK company register.</p>
+        </div>
 
-      <div class="faq-item">
-        <p class="faq-q">How often is it updated?</p>
-        <p class="faq-a">Every weekday morning. You receive new incorporations from the previous business day.</p>
-      </div>
+        <div class="faq-item">
+          <p class="faq-q">How often is it updated?</p>
+          <p class="faq-a">Every weekday morning. You receive new incorporations from the previous business day.</p>
+        </div>
 
-      <div class="faq-item">
-        <p class="faq-q">Is it only London companies?</p>
-        <p class="faq-a">Yes. We filter to high-confidence London postcodes only. Companies registered at service addresses outside London are excluded.</p>
-      </div>
+        <div class="faq-item">
+          <p class="faq-q">Is it only London companies?</p>
+          <p class="faq-a">Yes. We filter to high-confidence London postcodes only. Companies registered at service addresses outside London are excluded.</p>
+        </div>
 
-      <div class="faq-item">
-        <p class="faq-q">What trades are included?</p>
-        <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more.</p>
-      </div>
+        <div class="faq-item">
+          <p class="faq-q">What trades are included?</p>
+          <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more.</p>
+        </div>
 
-      <div class="faq-item">
-        <p class="faq-q">Can I cancel?</p>
-        <p class="faq-a">Yes, cancel anytime with one click. No contract, no questions.</p>
-      </div>
+        <div class="faq-item">
+          <p class="faq-q">Can I cancel?</p>
+          <p class="faq-a">Yes, cancel anytime with one click. No contract, no questions.</p>
+        </div>
 
-      <div class="faq-item">
-        <p class="faq-q">Do you provide contact details?</p>
-        <p class="faq-a">No. Companies House does not publish email addresses or phone numbers. You receive company name, trade, postcode, incorporation date, and a direct link to the official Companies House profile. Many subscribers use the registered address to send introductory letters.</p>
+        <div class="faq-item">
+          <p class="faq-q">Do you provide contact details?</p>
+          <p class="faq-a">No. Companies House does not publish email addresses or phone numbers. You receive company name, trade, postcode, incorporation date, and a direct link to the official Companies House profile. Many subscribers use the registered address to send introductory letters.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -189,9 +196,9 @@
   <footer>
     <div class="container">
       <p class="footer-trust">Live since March 2026. Data delivered every weekday without fail.</p>
-      <p>Refund policy: Full refund within 5 days of purchase if you are not satisfied.</p>
       <p>Data sourced from Companies House public records. Not exhaustive. Not affiliated with Companies House or any government body.</p>
-      <p>Copyright 2026 New London Trades Businesses Daily</p>
+      <p class="footer-nav"><a href="terms.html">Terms of Service</a> · <a href="refund.html">Refund Policy</a> · <a href="mailto:brahma27246@gmail.com">Contact</a></p>
+      <p>© 2026 New London Trades Businesses Daily</p>
     </div>
   </footer>
 
