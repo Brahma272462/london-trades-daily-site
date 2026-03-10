@@ -1,206 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New London Trades Businesses Daily</title>
-  <meta name="description" content="A daily filtered feed of newly incorporated London trade businesses, sourced directly from Companies House. Built for accountants, bookkeepers and professional service firms." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New London Trades Businesses Daily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ── Header ── -->
-  <header>
-    <div class="container">
-      <h1 class="headline">New London Trades Businesses Daily</h1>
-      <p class="value-prop">Be the first to reach new London construction and trades businesses — before your competitors.</p>
-      <p class="subheadline">Freshly incorporated London trade businesses, delivered to your inbox every morning.</p>
-      <p class="description">A daily filtered feed of newly incorporated London trade businesses, sourced directly from Companies House. Built for accountants, bookkeepers and professional service firms who want to reach new businesses early.</p>
-    </div>
-  </header>
-
-  <!-- ── Proof ── -->
-  <section>
-    <div class="container">
-      <p class="proof-title">150+ new London trade businesses every month</p>
-      <p class="proof-body">Our system monitors Companies House daily and identifies newly incorporated London trade businesses filtered to high-confidence London postcodes. On a typical weekday we find 10 to 15 new incorporations. You receive them the next morning, before most competitors know they exist.</p>
-    </div>
-  </section>
-
-  <!-- ── What you get ── -->
-  <section>
-    <div class="container">
-      <h2>What is included</h2>
-      <ul class="feature-list">
-        <li>Daily email with high-confidence London incorporations in construction and trades</li>
-        <li>Human-readable trade labels (plumbing, roofing, electrical, building, and more)</li>
-        <li>Direct links to official Companies House profiles for each company</li>
-        <li>Full history stored in a shared Google Sheet you can search and filter</li>
-        <li>Each morning email is a clean, scannable list — takes less than 2 minutes to review</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ── How it works ── -->
-  <section class="section-how">
-    <div class="container">
-      <h2>How it works</h2>
-      <div class="steps">
-        <div class="step">
-          <p class="step-number">1</p>
-          <p class="step-title">We monitor Companies House</p>
-          <p class="step-desc">Every weekday, our system checks for newly incorporated London trade businesses.</p>
+    <nav class="topbar">
+        <div class="container topbar-inner">
+            <span class="topbar-brand">London Trades Daily</span>
+            <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="topbar-cta">Request a free sample →</a>
         </div>
-        <div class="step">
-          <p class="step-number">2</p>
-          <p class="step-title">We filter to London trades</p>
-          <p class="step-desc">Only high-confidence London postcodes and construction/trade SIC codes are included. No noise.</p>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>New London trade businesses, the morning after they&nbsp;incorporate</h1>
+            <p class="hero-sub">A daily filtered feed from Companies House, delivered to your inbox every weekday. Takes 2 minutes to review.</p>
+            <p class="hero-detail">Built for accountants, bookkeepers, and professional service firms who want to reach newly incorporated London construction and trade businesses before anyone else.</p>
+            <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="hero-cta">Request a free sample →</a>
         </div>
-        <div class="step">
-          <p class="step-number">3</p>
-          <p class="step-title">You receive the list by email</p>
-          <p class="step-desc">A clean, scannable list arrives in your inbox every morning. Company name, trade, postcode, and a direct Companies House link.</p>
+    </header>
+
+    <section class="stat-banner">
+        <div class="container stat-banner-inner">
+            <span class="stat-number">150+</span>
+            <p class="stat-text">New London trade businesses identified every month. On a typical weekday we find 10 to 15 new incorporations. You receive them before most competitors know they exist.</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── Who it's for ── -->
-  <section>
-    <div class="container">
-      <h2>Built for firms that win clients early</h2>
-      <ul class="feature-list">
-        <li>Accountants and bookkeeping firms targeting new businesses</li>
-        <li>Payroll, VAT and compliance service providers</li>
-        <li>Business formation agents and virtual office providers</li>
-        <li>Insurance brokers serving construction SMEs</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ── Sample data ── -->
-  <section class="section-table">
-    <div class="container">
-      <h2>Real companies from a recent daily feed</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Trade</th>
-              <th>Postcode</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>D&amp;F LONDON CONSTRUCTION LTD</td>
-              <td>Construction of domestic buildings</td>
-              <td>SW15 5ET</td>
-            </tr>
-            <tr>
-              <td>PLUMBING ELITE LTD</td>
-              <td>Plumbing, heat and air-conditioning installation</td>
-              <td>EC2A 4NE</td>
-            </tr>
-            <tr>
-              <td>ELECTRICAL FACILITIES 24/7 LTD</td>
-              <td>Electrical installation</td>
-              <td>SW3 5BE</td>
-            </tr>
-            <tr>
-              <td>PRO20 ROOFING LTD</td>
-              <td>Roofing activities</td>
-              <td>SW19 1AU</td>
-            </tr>
-            <tr>
-              <td>VENUS POLISHED CONCRETE LTD</td>
-              <td>Other specialised construction activities</td>
-              <td>SE16 5RF</td>
-            </tr>
-            <tr>
-              <td>GLOWPRO ELITE SERVICES LTD</td>
-              <td>Painting</td>
-              <td>WC2H 9JQ</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="table-note">Sample from one day. You receive this every weekday morning.</p>
-    </div>
-  </section>
-
-  <!-- ── Pricing ── -->
-  <section class="section-pricing">
-    <div class="container">
-      <div class="pricing-card">
-        <h2>Early access pricing</h2>
-        <p class="price">£49 <span class="price-period">/ month</span></p>
-        <div class="pricing-support">
-          <p class="billing-line">Billed monthly. Cancel anytime. No contract.</p>
-          <p>Less than £2.50 per working day. Win one new client and it pays for itself for years.</p>
-          <p class="guarantee-line">7-day money-back guarantee — no questions asked.</p>
-          <p class="locked-line">Early access pricing locked in for 12 months for the first 20 subscribers.</p>
+    <section class="section section--bordered">
+        <div class="container">
+            <p class="section-label">What's included</p>
+            <h2>Everything you need to reach new businesses first</h2>
+            <ul class="features-list">
+                <li><span class="check">✓</span> Daily email with high-confidence London incorporations in construction and trades</li>
+                <li><span class="check">✓</span> Human-readable trade labels — plumbing, roofing, electrical, building, and more</li>
+                <li><span class="check">✓</span> Direct links to official Companies House profiles for each company</li>
+                <li><span class="check">✓</span> Full history stored in a shared Google Sheet you can search and filter</li>
+                <li><span class="check">✓</span> Each morning email is a clean, scannable list — takes less than 2 minutes to review</li>
+            </ul>
         </div>
-        <div class="cta-group">
-          <a class="btn btn-primary" href="https://londontradesdaily.lemonsqueezy.com/checkout/buy/9210b62e-c0f6-4e42-8be6-00f986289056" target="_blank">Subscribe — £49/month</a>
-          <a class="btn btn-secondary" href="https://forms.gle/AXwfoAjnkyXZRsHv6">Request a free sample</a>
+    </section>
+
+    <section class="email-mockup-section">
+        <div class="container">
+            <p class="section-label">Real data</p>
+            <h2>What your daily email looks like</h2>
+            <div class="email-mockup-layout">
+                <div class="email-mockup-text">
+                    <p>Every weekday morning you receive an email listing newly incorporated London trade businesses from the previous day.</p>
+                    <p>Each entry includes the company name, trade category, London postcode, incorporation date, and a direct link to their official Companies House profile.</p>
+                    <p style="color: var(--ink-muted); font-size: 0.9375rem;">No formatting to decode, no dashboards to log into. Just a clean list in your inbox, ready to act on.</p>
+                </div>
+                <div class="email-mockup-frame">
+                    <div class="email-mockup-header">
+                        <span class="em-subject">London Trades Daily — 6 Mar 2026</span>
+                        <span class="em-from">From: London Trades Daily</span>
+                        <span class="em-to">To: you</span>
+                    </div>
+                    <div class="email-mockup-body">
+                        <div class="em-title">Today's London incorporations</div>
+                        <div class="em-summary">12 new companies · High-confidence London postcodes</div>
+                        <div class="em-entry">
+                            <div class="em-company">D&amp;F London Construction Ltd</div>
+                            <div class="em-trade">Construction of domestic buildings</div>
+                            <div class="em-meta">SW15 5ET · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry">
+                            <div class="em-company">Plumbing Elite Ltd</div>
+                            <div class="em-trade">Plumbing, heat and air-conditioning</div>
+                            <div class="em-meta">EC2A 4NE · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry">
+                            <div class="em-company">Electrical Facilities 24/7 Ltd</div>
+                            <div class="em-trade">Electrical installation</div>
+                            <div class="em-meta">SW3 5BE · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry">
+                            <div class="em-company">Pro20 Roofing Ltd</div>
+                            <div class="em-trade">Roofing activities</div>
+                            <div class="em-meta">SW19 1AU · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry">
+                            <div class="em-company">Venus Polished Concrete Ltd</div>
+                            <div class="em-trade">Specialised construction</div>
+                            <div class="em-meta">SE16 5RF · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry">
+                            <div class="em-company">Glowpro Elite Services Ltd</div>
+                            <div class="em-trade">Painting</div>
+                            <div class="em-meta">WC2H 9JQ · Incorporated 5 Mar · View profile →</div>
+                        </div>
+                        <div class="em-entry" style="text-align: center; color: var(--ink-faint); font-size: 0.6875rem; padding: 0.75rem 0;">
+                            + 6 more companies...
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="cta-note">Subscribe instantly, or request a free sample and we'll be in touch within one working day.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ── FAQ ── -->
-  <section>
-    <div class="container">
-      <h2>Questions</h2>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <p class="faq-q">Where does the data come from?</p>
-          <p class="faq-a">Directly from Companies House, the official UK company register.</p>
+    <section class="section section--bordered">
+        <div class="container">
+            <p class="section-label">How it works</p>
+            <h2>Three steps, every weekday</h2>
+            <div class="steps">
+                <div>
+                    <div class="step-number">1</div>
+                    <div class="step-title">We monitor Companies House</div>
+                    <p class="step-desc">Every weekday, our system checks for newly incorporated London trade businesses.</p>
+                </div>
+                <div>
+                    <div class="step-number">2</div>
+                    <div class="step-title">We filter to London trades</div>
+                    <p class="step-desc">Only high-confidence London postcodes and construction SIC codes are included. No noise.</p>
+                </div>
+                <div>
+                    <div class="step-number">3</div>
+                    <div class="step-title">You receive the list by email</div>
+                    <p class="step-desc">A clean list arrives in your inbox. Company name, trade, postcode, and a direct Companies House link.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item">
-          <p class="faq-q">How often is it updated?</p>
-          <p class="faq-a">Every weekday morning. You receive new incorporations from the previous business day.</p>
+    <section class="section section--bordered">
+        <div class="container">
+            <p class="section-label">Built for</p>
+            <h2>Firms that win clients early</h2>
+            <div class="audience-grid">
+                <div class="audience-card">Accountants and bookkeeping firms targeting new businesses</div>
+                <div class="audience-card">Payroll, VAT and compliance service providers</div>
+                <div class="audience-card">Business formation agents and virtual office providers</div>
+                <div class="audience-card">Insurance brokers serving construction SMEs</div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item">
-          <p class="faq-q">Is it only London companies?</p>
-          <p class="faq-a">Yes. We filter to high-confidence London postcodes only. Companies registered at service addresses outside London are excluded.</p>
+    <section class="credibility-strip">
+        <div class="container">
+            <div class="credibility-items">
+                <div class="cred-item">
+                    <span class="cred-number">150+</span>
+                    <span class="cred-label">Leads per month</span>
+                </div>
+                <div class="cred-item">
+                    <span class="cred-number">25</span>
+                    <span class="cred-label">Trade categories</span>
+                </div>
+                <div class="cred-item">
+                    <span class="cred-number">5 days</span>
+                    <span class="cred-label">Per week delivery</span>
+                </div>
+                <div class="cred-item">
+                    <span class="cred-number">Mar 2026</span>
+                    <span class="cred-label">Live since</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item">
-          <p class="faq-q">What trades are included?</p>
-          <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more.</p>
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-card">
+                <p class="section-label">Early access pricing</p>
+                <div class="pricing-amount">£49</div>
+                <div class="pricing-period">per month · cancel anytime</div>
+                <ul class="pricing-details">
+                    <li>Less than £2.50 per working day</li>
+                    <li class="highlight">7-day money-back guarantee — no questions asked</li>
+                    <li>Early access rate locked in for 12 months</li>
+                    <li>First 20 subscribers only</li>
+                </ul>
+                <div class="btn-group">
+                    <a href="https://londontradesdaily.lemonsqueezy.com/checkout/buy/9210b62e-c0f6-4e42-8be6-00f986289056" target="_blank" class="btn btn-primary">Subscribe — £49/month</a>
+                    <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="btn btn-secondary">Request a free sample</a>
+                </div>
+                <p class="pricing-footnote">Subscribe instantly, or request a free sample and we'll be in touch within one working day.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item">
-          <p class="faq-q">Can I cancel?</p>
-          <p class="faq-a">Yes, cancel anytime with one click. No contract, no questions.</p>
+    <section class="section">
+        <div class="container">
+            <p class="section-label">Questions</p>
+            <h2>Things you might want to know</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <p class="faq-q">Where does the data come from?</p>
+                    <p class="faq-a">Directly from Companies House, the official UK company register.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">How often is it updated?</p>
+                    <p class="faq-a">Every weekday morning. You receive new incorporations from the previous business day.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Is it only London companies?</p>
+                    <p class="faq-a">Yes. We filter to high-confidence London postcodes only. Companies registered at service addresses outside London are excluded.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">What trades are included?</p>
+                    <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Can I cancel?</p>
+                    <p class="faq-a">Yes, cancel anytime with one click. No contract, no questions.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Do you provide contact details?</p>
+                    <p class="faq-a">No. Companies House does not publish email addresses or phone numbers. You receive company name, trade, postcode, incorporation date, and a direct link to the official Companies House profile. Many subscribers use the registered address to send introductory letters.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="faq-item">
-          <p class="faq-q">Do you provide contact details?</p>
-          <p class="faq-a">No. Companies House does not publish email addresses or phone numbers. You receive company name, trade, postcode, incorporation date, and a direct link to the official Companies House profile. Many subscribers use the registered address to send introductory letters.</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-trust">Live since March 2026. Data delivered every weekday without fail.</p>
+            <p class="footer-disclaimer">Data sourced from Companies House public records. Not exhaustive. Not affiliated with Companies House or any government body.</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms of Service</a>
+                <a href="refund.html">Refund Policy</a>
+                <a href="mailto:brahma27246@gmail.com">Contact</a>
+            </div>
+            <p class="footer-copy">© 2026 New London Trades Businesses Daily</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Footer ── -->
-  <footer>
-    <div class="container">
-      <p class="footer-trust">Live since March 2026. Data delivered every weekday without fail.</p>
-      <p>Data sourced from Companies House public records. Not exhaustive. Not affiliated with Companies House or any government body.</p>
-      <p class="footer-nav"><a href="terms.html">Terms of Service</a> · <a href="refund.html">Refund Policy</a> · <a href="mailto:brahma27246@gmail.com">Contact</a></p>
-      <p>© 2026 New London Trades Businesses Daily</p>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>

@@ -1,34 +1,28 @@
 # New London Trades Businesses Daily
 
-Static marketing site for a daily digest of newly incorporated London construction and trades businesses, sourced from Companies House. Built for accountants, bookkeepers, and professional service firms.
+Marketing site for New London Trades Businesses Daily — a daily email digest of newly incorporated London construction and trade businesses, sourced from Companies House.
 
-## Live site
-
-https://brahma272462.github.io/london-trades-daily-site/
+Live site: https://brahma272462.github.io/london-trades-daily-site/
 
 ## Pages
 
-- `index.html` — main landing page
-- `terms.html` — Terms of Service
-- `refund.html` — Refund Policy
+- index.html — Landing page
+- terms.html — Terms of Service
+- refund.html — Refund Policy
+- styles.css — Shared stylesheet
 
 ## Deployment
 
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Set source to **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. Save. Live within a minute or two.
+GitHub Pages: Settings → Pages → Deploy from branch → main → / root
 
 ## How to update
 
-**Sample companies** — Open `index.html`, find the `<tbody>` in the "Real companies from a recent daily feed" section. Edit the `<tr>` rows. Three columns: Company, Trade, Postcode.
+**Sample companies in email mockup:** Edit index.html, find the email-mockup-body section. Each em-entry div is one company.
 
-**Payment link** — Search `index.html` for `londontradesdaily.lemonsqueezy.com` and replace the URL.
+**Payment link:** Search index.html for "lemonsqueezy.com" and replace the URL.
 
-**Free sample form link** — Search `index.html` for `forms.gle` and replace the URL.
+**Google Form link:** Search index.html for "forms.gle" and replace the URL (appears in topbar, hero, and pricing section).
 
-**Price** — The price (£49) appears across all three pages (`index.html`, `terms.html`, `refund.html`). Search each file for `£49` and update accordingly. Also update the Subscribe button label.
+**Price:** Search all HTML files for "£49" — it appears in index.html (pricing section) and terms.html (billing section).
 
-## Contact
-
-brahma27246@gmail.com
+**Contact email:** brahma27246@gmail.com — appears in terms.html, refund.html, and footer mailto link.
