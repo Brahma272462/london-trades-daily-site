@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -21,33 +21,34 @@
     <header class="hero">
         <div class="container">
             <h1>New London trade businesses, the morning after they&nbsp;incorporate</h1>
-            <p class="hero-sub">A daily filtered feed from Companies House, delivered to your inbox every weekday. Takes 2 minutes to review.</p>
-            <p class="hero-detail">Built for accountants, bookkeepers, and professional service firms who want to reach newly incorporated London construction and trade businesses before anyone else.</p>
+            <p class="hero-sub">A daily feed of newly incorporated London construction and trades businesses — including director names — delivered to your inbox every weekday morning.</p>
+            <p class="hero-detail">Sourced from the official UK government register. Filtered for genuine London construction and trades businesses. In your inbox every weekday morning, without fail.</p>
             <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="hero-cta">Request a free sample →</a>
         </div>
     </header>
 
+    <!-- Stat banner -->
     <section class="stat-banner">
-        <div class="container stat-banner-inner">
-            <span class="stat-number">150+</span>
-            <p class="stat-text">New London trade businesses identified every month. On a typical weekday we find 10 to 15 new incorporations. You receive them before most competitors know they exist.</p>
-        </div>
-    </section>
-
-    <section class="section section--bordered">
         <div class="container">
-            <p class="section-label">What's included</p>
-            <h2>Everything you need to reach new businesses first</h2>
-            <ul class="features-list">
-                <li><span class="check">✓</span> Daily email with newly incorporated London construction and trades businesses — including director names</li>
-                <li><span class="check">✓</span> Human-readable trade labels — plumbing, roofing, electrical, building, and more</li>
-                <li><span class="check">✓</span> Direct links to official Companies House profiles for each company</li>
-                <li><span class="check">✓</span> Full history stored in a shared Google Sheet you can search and filter</li>
-                <li><span class="check">✓</span> Each morning email is a clean, scannable list — takes less than 2 minutes to review</li>
-            </ul>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">London trade businesses identified per month</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25</span>
+                    <span class="stat-label">Trade categories tracked</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5 days</span>
+                    <span class="stat-label">Per week delivery</span>
+                </div>
+            </div>
+            <p class="stat-supporting">On a typical weekday we find 20 to 50 new incorporations. You receive them before most competitors know they exist.</p>
         </div>
     </section>
 
+    <!-- Email mockup — the proof -->
     <section class="email-mockup-section">
         <div class="container">
             <p class="section-label">Real data</p>
@@ -56,7 +57,7 @@
                 <div class="email-mockup-text">
                     <p>Every weekday morning you receive an email listing newly incorporated London trade businesses from the previous day.</p>
                     <p>Each entry includes the company name, director name, trade category, London postcode, incorporation date, and a direct link to their official Companies House profile.</p>
-                    <p style="color: var(--ink-muted); font-size: 0.9375rem;">No formatting to decode, no dashboards to log into. Just a clean list in your inbox, ready to act on.</p>
+                    <p class="muted-text">No dashboards to log into. Just a clean list in your inbox, ready to act on.</p>
                 </div>
                 <div class="email-mockup-frame">
                     <div class="email-mockup-header">
@@ -103,100 +104,97 @@
                             <div class="em-trade">Development of building projects</div>
                             <div class="em-meta">EC4V 6EB · Incorporated 10 Mar · View profile →</div>
                         </div>
-                        <div class="em-entry" style="text-align: center; color: var(--ink-faint); font-size: 0.6875rem; padding: 0.75rem 0;">
-                            + 6 more companies...
-                        </div>
+                        <div class="em-entry em-more">+ 6 more companies...</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Mid-page CTA -->
+    <section class="mid-cta">
+        <div class="container mid-cta-inner">
+            <p class="mid-cta-text">See real data from this week's London incorporations — free, no obligation.</p>
+            <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="btn btn-primary">Request a Free Sample</a>
+        </div>
+    </section>
+
+    <!-- What's included — tightened -->
     <section class="section section--bordered">
         <div class="container">
-            <p class="section-label">How it works</p>
-            <h2>Three steps, every weekday</h2>
-            <div class="steps">
-                <div>
-                    <div class="step-number">1</div>
-                    <div class="step-title">We monitor Companies House</div>
-                    <p class="step-desc">Every weekday, our system checks for newly incorporated London trade businesses.</p>
+            <p class="section-label">What's included</p>
+            <h2>Everything in one daily email</h2>
+            <div class="include-grid">
+                <div class="include-item">
+                    <span class="include-icon">✓</span>
+                    <div>
+                        <strong>Company &amp; director details</strong>
+                        <p>Company name, director name, registered address, trade category, incorporation date</p>
+                    </div>
                 </div>
-                <div>
-                    <div class="step-number">2</div>
-                    <div class="step-title">We filter to London trades</div>
-                    <p class="step-desc">Only high-confidence London postcodes and construction SIC codes are included. No noise.</p>
+                <div class="include-item">
+                    <span class="include-icon">✓</span>
+                    <div>
+                        <strong>Human-readable trade labels</strong>
+                        <p>Plumbing, roofing, electrical, building, carpentry, painting, and 20+ more categories</p>
+                    </div>
                 </div>
-                <div>
-                    <div class="step-number">3</div>
-                    <div class="step-title">You receive the list by email</div>
-                    <p class="step-desc">A clean list arrives in your inbox. Company name, trade, postcode, and a direct Companies House link.</p>
+                <div class="include-item">
+                    <span class="include-icon">✓</span>
+                    <div>
+                        <strong>Direct Companies House links</strong>
+                        <p>One click to the official profile for each company — verify and research instantly</p>
+                    </div>
+                </div>
+                <div class="include-item">
+                    <span class="include-icon">✓</span>
+                    <div>
+                        <strong>Takes 2 minutes to review</strong>
+                        <p>A clean, scannable list every morning — no dashboards, no logins, just your inbox</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section--bordered">
-        <div class="container">
-            <p class="section-label">Built for</p>
-            <h2>Firms that win clients early</h2>
-            <div class="audience-grid">
-                <div class="audience-card">Accountants and bookkeeping firms targeting new businesses</div>
-                <div class="audience-card">Payroll, VAT and compliance service providers</div>
-                <div class="audience-card">Business formation agents and virtual office providers</div>
-                <div class="audience-card">Insurance brokers serving construction SMEs</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--bordered">
+    <!-- How firms use this -->
+    <section class="section section--warm section--bordered">
         <div class="container">
             <p class="section-label">In practice</p>
-            <h2>How firms typically use this</h2>
-            <ul class="features-list">
-                <li><span class="check">✓</span> Identify newly incorporated contractors before they choose an accountant</li>
-                <li><span class="check">✓</span> Send introductory letters to trades businesses in your service area</li>
-                <li><span class="check">✓</span> Look up directors and make introductions within days of incorporation</li>
-                <li><span class="check">✓</span> Identify potential CIS clients before competitors reach them</li>
-                <li><span class="check">✓</span> Track new construction activity across London postcodes</li>
+            <h2>How accounting firms use this</h2>
+            <ul class="use-case-list">
+                <li>Identify newly incorporated contractors before they choose an accountant</li>
+                <li>Send introductory letters to trades businesses in your service area</li>
+                <li>Look up directors and make introductions within days of incorporation</li>
+                <li>Identify potential CIS clients before competitors reach them</li>
+                <li>Track new construction activity across London postcodes</li>
             </ul>
+            <p class="cis-callout">Many new construction incorporations need CIS registration guidance within their first weeks of trading. This feed helps you reach them before they find another adviser.</p>
         </div>
     </section>
 
-    <section class="credibility-strip">
+    <!-- Built for -->
+    <section class="section section--bordered">
         <div class="container">
-            <div class="credibility-items">
-                <div class="cred-item">
-                    <span class="cred-number">150+</span>
-                    <span class="cred-label">Leads per month</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">25</span>
-                    <span class="cred-label">Trade categories</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">5 days</span>
-                    <span class="cred-label">Per week delivery</span>
-                </div>
-                <div class="cred-item">
-                    <span class="cred-number">Mar 2026</span>
-                    <span class="cred-label">Live since</span>
-                </div>
-            </div>
+            <p class="section-label">Built for accountants</p>
+            <h2>The fastest way to reach new construction clients</h2>
+            <p style="color: var(--ink-secondary); font-size: 1.0625rem; max-width: 560px; margin-bottom: 1.5rem;">Most accounting firms that serve construction and trades businesses rely on referrals and word of mouth. This feed gives you a direct pipeline of newly incorporated companies — with director names — the morning after they register.</p>
+            <p style="color: var(--ink-muted); font-size: 0.9375rem;">Also used by payroll providers, business formation agents, and insurance brokers serving the construction sector.</p>
         </div>
     </section>
 
+    <!-- Pricing -->
     <section class="pricing-section">
         <div class="container">
             <div class="pricing-card">
-                <p class="section-label">Early access pricing</p>
-                <div class="pricing-amount">£49</div>
-                <div class="pricing-period">per month · cancel anytime</div>
+                <p class="section-label">Try it free</p>
+                <div class="pricing-amount">Free sample</div>
+                <div class="pricing-period">then £49/month · early access rate locked for 12 months</div>
                 <ul class="pricing-details">
                     <li>Less than £2.50 per working day</li>
                     <li class="highlight">7-day money-back guarantee — no questions asked</li>
-                    <li>Early access rate locked in for 12 months</li>
-                    <li>First 20 subscribers only</li>
+                    <li>Cancel anytime, no contract</li>
+                    <li>Early access rate for the first 20 subscribers only</li>
                 </ul>
                 <div class="btn-group">
                     <a href="https://forms.gle/AXwfoAjnkyXZRsHv6" class="btn btn-primary">Request a Free Sample</a>
@@ -206,6 +204,7 @@
         </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section">
         <div class="container">
             <p class="section-label">Questions</p>
@@ -225,23 +224,24 @@
                 </div>
                 <div class="faq-item">
                     <p class="faq-q">What trades are included?</p>
-                    <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more.</p>
+                    <p class="faq-a">Construction and building trades: plumbing, electrical, roofing, building, civil engineering, site preparation, scaffolding, and more — 25 trade categories in total.</p>
                 </div>
                 <div class="faq-item">
                     <p class="faq-q">Can I cancel?</p>
                     <p class="faq-a">Yes, cancel anytime with one click. No contract, no questions.</p>
                 </div>
                 <div class="faq-item">
-                    <p class="faq-q">Do you provide contact details?</p>
+                    <p class="faq-q">Does the feed include email addresses or phone numbers?</p>
                     <p class="faq-a">The feed includes company name, director name, registered address, trade category, incorporation date, and a direct Companies House profile link. Companies House does not publish email addresses or phone numbers, but many firms use the registered address and director name to send introductory letters.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-trust">Live since March 2026. Data delivered every weekday without fail.</p>
+            <p class="footer-trust">Automated. Reliable. Every weekday without fail.</p>
             <p class="footer-disclaimer">Data sourced from Companies House public records. Not exhaustive. Not affiliated with Companies House or any government body.</p>
             <div class="footer-links">
                 <a href="terms.html">Terms of Service</a>
